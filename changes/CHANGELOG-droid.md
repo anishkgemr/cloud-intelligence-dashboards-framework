@@ -17,6 +17,16 @@ The DROID Dashboard provides comprehensive RDS instance analysis across multi-ac
 - **Efficient Storage**: Partitioned S3 data (account/region/date) with Glue crawlers for automatic schema updates
 - **CID Framework Integration**: Seamless deployment via cid-cmd with standard CID patterns and naming conventions
 
+## DROID Dashboard - v1.0.1
+* Aurora Cluster I/O Optimized Recommendation (Current Month to Date): excluded "Review" results so the visual highlights actionable clusters
+* Renamed the backup KPI to "Instances Backed Up %" for clarity
+* Instances with no cluster now display as "Standalone Instance" instead of a blank cluster id
+* Monthly Extended Support Cost: changed from a table to a bar chart and included the latest month
+* Snapshot Backup % by DB engine: removed the redundant trend line and added data labels
+* Larger visual titles and click-to-filter actions across chart visuals
+* Removed the AutoBackup pie chart and the "Daily Snapshot Backup % per Account" pivot to reduce redundancy
+* Visual count: 88 (net -2 from v1.0.0)
+
 ## DROID Dashboard - v1.0.0
 * Initial release
 * 5 tabs: Inventory, Version and Maintenance, Security and Resiliency, Backup, Cost
